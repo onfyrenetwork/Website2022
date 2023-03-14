@@ -33,7 +33,7 @@ span {
 }
 
 p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 h1 {
@@ -74,14 +74,14 @@ h6 {
 
 .nav-link {
     font-size: 20px;
-    border-radius: 16px;
     transition: 0.3s;
+    border-bottom: 1px solid transparent;
 }
 
 .nav-link:hover {
     font-size: 20px;
-    border-radius: 16px;
     transition: 0.3s;
+    border-bottom: 1px solid white;
 }
 
 .link {
@@ -112,31 +112,14 @@ a:hover {
     transition: 0.3s;
 }
 
-::-webkit-scrollbar {
-    background-color: rgb(25, 25, 25);
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    box-shadow: 0 0 20px 2px #000000;
-    background-color: rgb(45, 45, 45);
-    border-radius: 16px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(80, 80, 80);
-    border-radius: 16px;
-}
-
-::-webkit-scrollbar-thumb:active {
-    background-color: rgb(120, 120, 120);
-    border-radius: 16px;
-}
-
 nav {
     position: sticky;
     top: 0px;
     background-color: rgb(25, 25, 25);
+}
+
+#loginButton:hover {
+    padding: 10px 64px;
 }
 
 .navbar {
@@ -212,10 +195,11 @@ button:hover {
 
 .gallery-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 32px;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(20, 20, 20);
     aspect-ratio: 1;
     background-position: center;
     background-repeat: no-repeat;
@@ -287,7 +271,6 @@ footer {
     height: 35px;
     width: 2.5px;
     background-color: #aaaaaa;
-    margin: -10px;
     border-radius: 25px;
 }
 
