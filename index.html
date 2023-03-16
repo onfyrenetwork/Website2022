@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"/>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body class="body">
@@ -34,7 +34,7 @@
 
     <section class="hero-right">
         <div class="hero-content">
-            <h1>Introducing: The Safer Internet</h1>
+            <h1></h1>
             <div>
                 <p style="max-width: 50vw;">
                     Wir tragen durch Software wie Security-Clients, VPNs, uvm. zum sichereren Internet bei.
@@ -43,7 +43,7 @@
 
                 </p>
             </div>
-            <div class="hero-button-wrapper">
+            <div class="button-wrapper">
                 <a href="https://onfyre.net/auth/login"><button>Login<span class="material-symbols-rounded">arrow_forward</span></button></a>
                 <a href="https://status.onfyre.net"><button>Statusseite<span class="material-symbols-rounded">ssid_chart</span></button></a>
             </div>
@@ -51,29 +51,88 @@
     </section>
 
     <section class="gallery">
-        <div class="gallery-item">
+        <input checked type="radio" name="software" id="aterniumSoftwareRadio">
+        <label for="aterniumSoftwareRadio" class="gallery-item">
             <h1>ATERNIUM</h1>
             <span>Minecraft Client</span>
-        </div>
+        </label>
 
-        <div class="gallery-item">
+        <input type="radio" name="software" id="fyutilsSoftwareRadio">
+        <label for="fyutilsSoftwareRadio" class="gallery-item">
             <h1>FyUTILS</h1>
             <span>Python Hacking CLI</span>
-        </div>
+        </label>
 
-        <div class="gallery-item">
+        <input type="radio" name="software" id="aventurinSoftwareRadio">
+        <label for="aventurinSoftwareRadio" class="gallery-item">
             <h1>AVENTURIN</h1>
             <span>Web-Security Client</span>
-        </div>
+        </label>
         
-        <div class="gallery-item">
+        <input type="radio" name="software" id="rhodionitSoftwareRadio">
+        <label for="rhodionitSoftwareRadio" class="gallery-item">
             <h1>RHODIONIT</h1>
-            <span>Security and Administration Tool</span>
-        </div>
+            <span>Security & Administration Tool</span>
+        </label>
     </section>
 
-    <section class="overview">
-        
+    <section class="software">
+        <div class="software-container" id="aterniumContainer">
+            <div class="software-wrapper">
+                <h1>Aternium Client</h1>
+                <p style="max-width: 45vw;">
+                    Aternium Client ist ein Minecraft Client inklusive Launcher mit cleanem Design, verbesserter Performance, QoL Features, integriertem Alt-Manager für das schnelle Wechseln verschiedener Accounts und ein integriertes VPN, damit Server deine IP nicht abgreifen.
+                </p>
+                <div class="button-wrapper">
+                    <button>Download Installer x64</button>
+                </div>
+            </div>
+            
+            <img style="height: 15vw; border-radius: 10px;" src="src/aternium_launcher.png" alt="Aternium Launcher">
+        </div>
+
+        <div class="software-container" id="fyutilsContainer">
+            <div class="software-wrapper">
+                <h1>FyUTILS CLI</h1>
+                <p style="max-width: 45vw;">
+                    OnFyre Utilitys (aka. FyUTILS) ist ein Command Line Interface (CLI) bestimmt für Hacking. FyUTILS erhält ständig neue Updates mit vielen neuen Features. Die beliebtesten sind:
+                    Port Flooding, Port Scanning, USB Software Loader und viele mehr.
+                </p>
+                <div class="button-wrapper">
+                    <a href="https://github.com/NoahOnFyre/FyUTILS/releases/latest" target="_blank" rel="noopener noreferrer"><button>Download Standalone</button></a>
+                </div>
+            </div>
+            
+            <img style="height: 15vw; border-radius: 10px;" src="src/fyutils_cli.png" alt="FyUTILS CLI">
+        </div>
+
+        <div class="software-container" id="aventurinContainer">
+            <div class="software-wrapper">
+                <h1>Aventurin</h1>
+                <p style="max-width: 45vw;">
+                    Aventurin ist momentan noch in der Entwicklungszeit. Zur Open Beta kannst du dich gerne für das testen der Software bewerben!
+                </p>
+                <div class="button-wrapper">
+                    <a href="https://openbeta.onfyre.net/apply"><button>Open Beta Portal</button></a>
+                </div>
+            </div>
+            
+            <img style="height: 15vw; border-radius: 10px;" src="src/icon.png" alt="Icon">
+        </div>
+
+        <div class="software-container" id="rhodionitContainer">
+            <div class="software-wrapper">
+                <h1>Rhodionit</h1>
+                <p style="max-width: 45vw;">
+                    Rhodionit ist momentan noch in der Entwicklungszeit. Zur Open Beta kannst du dich gerne für das testen der Software bewerben!
+                </p>
+                <div class="button-wrapper">
+                    <a href="https://openbeta.onfyre.net/apply"><button>Open Beta Portal</button></a>
+                </div>
+            </div>
+            
+            <img style="height: 15vw; border-radius: 10px;" src="src/icon.png" alt="Icon">
+        </div>
     </section>
 
     <section class="news">
