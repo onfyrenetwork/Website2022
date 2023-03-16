@@ -251,6 +251,12 @@ input[name="software"]:checked+.gallery-item {
     justify-content: space-between;
 }
 
+.software-img {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 1);
+    height: 15vw;
+    border-radius: 10px;
+}
+
 .news {
     display: flex;
     padding: 100px;
