@@ -259,11 +259,27 @@ input[name="software"]:checked+.gallery-item {
 
 .news {
     display: flex;
-    padding: 100px;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 45vh;
     background: var(--gradient);
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+    border-radius: 32px;
+    background-color: rgb(20, 20, 20);
+    aspect-ratio: 1.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer-link-wrapper {
