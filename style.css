@@ -317,6 +317,29 @@ input[name="software"]:checked+.gallery-item {
     font-size: 18px;
 }
 
+.large-heading {
+    color: #B200FF;
+    font-size: 72px;
+    transition: 0.5s ease-in-out;
+}
+
+.large-heading:hover {
+    color: #FF00DC;
+    font-size: 72px;
+    letter-spacing: 50px;
+    margin-right: -50px;
+    transition: 0.5s ease-in-out;
+}
+
+.hero-centered {
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
 .footer-link-wrapper {
     width: 75vw;
     display: flex;
