@@ -1,3 +1,6 @@
+
+let gitCommit = document.getElementById("gitCommit")
+
 let aterniumRadio = document.getElementById("aterniumSoftwareRadio")
 let fyutilsRadio = document.getElementById("fyutilsSoftwareRadio")
 let aventurinRadio = document.getElementById("aventurinSoftwareRadio")
@@ -41,6 +44,7 @@ function updateSoftwareSection() {
 }
 
 updateSoftwareSection()
+updateGitFooter()
 
 aterniumRadio.addEventListener("click", updateSoftwareSection)
 fyutilsRadio.addEventListener("click", updateSoftwareSection)
