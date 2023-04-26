@@ -73,36 +73,6 @@ h1 {
     font-family: 'Poppins Bold';
 }
 
-h2 {
-    letter-spacing: 3.5px;
-    font-size: 48px;
-    font-family: 'Poppins Bold';
-}
-
-h3 {
-    letter-spacing: 3.5px;
-    font-size: 32px;
-    font-family: 'Poppins Bold';
-}
-
-h4 {
-    letter-spacing: 3.5px;
-    font-size: 24px;
-    font-family: 'Poppins Bold';
-}
-
-h5 {
-    letter-spacing: 3.5px;
-    font-size: 18px;
-    font-family: 'Poppins Bold';
-}
-
-h6 {
-    letter-spacing: 3.5px;
-    font-size: 12px;
-    font-family: 'Poppins Bold';
-}
-
 .nav-link {
     font-size: 20px;
     transition: 0.3s;
@@ -188,6 +158,28 @@ nav {
     display: flex;
     justify-content: start;
     gap: 15px;
+}
+
+.download-button {
+    color: white;
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B200FF;
+    border-radius: 12px;
+    padding: 16px 32px;
+}
+
+.download-button:hover {
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+    background-color: #B200FF;
+    border-radius: 12px;
+    padding: 16px 32px;
 }
 
 button {
