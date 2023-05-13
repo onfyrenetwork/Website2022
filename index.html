@@ -1,192 +1,142 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnFyre Network | Home</title>
-    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"/>
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
     <script src="script.js" defer></script>
+    <title>OnFyre Network | Home</title>
 </head>
-
-<body class="body">
-    
+<body>
+    <div></div>
     <nav>
-        <section class="navbar">
-            <div class="nav-wrapper">
-                <a style="height: 55px;" href="https://onfyrenetwork.github.io/"><img src="src/icon.png" alt="" style="height: 55px;"></a>
+        <div class="nav-wrapper">
+            <a href="https://onfyre.net" style="height: 45px;"><img src="src/icon.png" height="45px" width="45px" alt="Logo"></a>
+            <a class="nav-item" href="#overview">Overview</a>
+            <a class="nav-item" href="#software">Software</a>
+            <a class="nav-item" href="#gallery">Gallery</a>
+        </div>
+
+        <div class="social-wrapper">
+            <a class="icon-wrapper" href="https://discord.io/onfyre" target="_blank" rel="noopener noreferrer"><img class="icon" src="src/discord.svg"></a>
+            <a class="icon-wrapper" href="https://github.com/onfyrenetwork" target="_blank" rel="noopener noreferrer"><img class="icon" src="src/github.svg"></a>
+        </div>
+    </nav>
+
+    <header>
+
+    </header>
+
+    <main>
+        <section id="overview">
+            <div class="wrapper">
+                <div>
+                    <h1 class="hero-heading">Software for everyone.</h1>
+                    <h1 class="hero-heading colored" style="margin-top: -8px;">Reimagined.</h1>
+                </div>
+                <p class="hero-paragraph">
+                    We strive to develop software with lots of functions, good user interfaces and great performance.
+                </p>
+                <a href="#software"><button>Our software</button></a>
+            </div>
+        </section>
+
+        <section id="software">
+            <h2>Currently popular<span style="margin-left: 10px;" class="colored">software:</span></h2>
+            <div class="software-gallery">
+                <a class="card" href="">
+                    <div class="headline">
+                        <img class="logo" src="src/Aternium.png" alt="">
+                        <h3>Aternium</h3>
+                    </div>
+                    <p style="font-size: 16px;">A Minecraft launcher with a client running fabric and a dedicated optimisation and utility mod to bring your gaming expierience to the next level.</p>
+                </a>
+                
+                <a class="card" href="">
+                    <div class="headline">
+                        <img class="logo" src="src/FyUTILS.png" alt="">
+                        <h3>FyUTILS</h3>
+                    </div>
+                    <p style="font-size: 16px;">FyUTILS is a CLI for Windows written in Python with a package manager using community created packages, loads of hacking utilities and more.</p>
+                </a>
+                
+                <a class="card" href="">
+                    <div class="headline">
+                        <img class="logo" src="src/Oxygen.png" alt="">
+                        <h3>Oxygen</h3>
+                    </div>
+                    <p style="font-size: 16px;">A performance profiler/optimiser mainly used for minecraft servers. Oxygen is available for various languages like Java and Python.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="row">
+                <div class="content">
+                    <h1>Test heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero itaque vitae nemo similique iste, delectus quas. Ullam debitis provident dolores fugit veniam, minus voluptas sequi ea quae earum ratione quasi!
+                    </p>
+                </div>
     
-                <div class="nav-link-wrapper">
-                    <a class="nav-link" href="">Software</a>
-                    <a class="nav-link" href="">Overview</a>
-                    <a class="nav-link" href="">Neuigkeiten</a>
-                    <a class="nav-link" href="status.html">Servicestatus</a>
-                    <a class="nav-link" href="">DevPortal</a>
-                    <div class="vertical-divider"></div>
-                    <a href="https://onfyre.net/auth/login"><button id="loginButton">Login<span class="material-symbols-rounded">arrow_forward</span></button></a>
+                <img src="src/gallery.png" alt="">
+            </div>
+
+            <div class="row">
+                <img src="src/gallery.png" alt="">
+
+                <div class="content">
+                    <h1>Test heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero itaque vitae nemo similique iste, delectus quas. Ullam debitis provident dolores fugit veniam, minus voluptas sequi ea quae earum ratione quasi!
+                    </p>
                 </div>
             </div>
         </section>
-    </nav>
 
-    <section class="hero-right">
-        <div class="hero-content">
-            <h1>MAINTENANCE</h1>
-            <div>
-                <p style="max-width: 50vw;">
-                    Wartungsarbeiten auf der Homepage, Statusseite und Login-System.
-                </p>
-            </div>
-            <div class="button-wrapper">
-                <a href="https://onfyre.net/auth/login"><button>Login<span class="material-symbols-rounded">arrow_forward</span></button></a>
-                <a href="https://status.onfyre.net"><button>Statusseite<span class="material-symbols-rounded">ssid_chart</span></button></a>
-            </div>
-        </div>
-    </section>
+        <footer>
+            <div class="wrapper">
+                <div class="category">
+                    <h3>Navigate</h3>
+                    <a href="#top">Scroll to top</a>
+                    <a href="#software">Software</a>
+                    <a href="#gallery">Gallery</a>
+                </div>
 
-    <section class="gallery">
-        <input checked type="radio" name="software" id="aterniumSoftwareRadio">
-        <label for="aterniumSoftwareRadio" class="gallery-item">
-            <h1 class="software-heading">ATERNIUM</h1>
-            <span>Minecraft Client</span>
-        </label>
-
-        <input type="radio" name="software" id="fyutilsSoftwareRadio">
-        <label for="fyutilsSoftwareRadio" class="gallery-item">
-            <h1 class="software-heading">FyUTILS</h1>
-            <span>Python Hacking CLI</span>
-        </label>
-
-        <input type="radio" name="software" id="aventurinSoftwareRadio">
-        <label for="aventurinSoftwareRadio" class="gallery-item">
-            <h1 class="software-heading">AVENTURIN</h1>
-            <span>Web-Security Client</span>
-        </label>
-        
-        <input type="radio" name="software" id="rhodionitSoftwareRadio">
-        <label for="rhodionitSoftwareRadio" class="gallery-item">
-            <h1 class="software-heading">RHODIONIT</h1>
-            <span>Security & Administration Tool</span>
-        </label>
-    </section>
-
-    <section class="software">
-        <div class="software-container" id="aterniumContainer">
-            <div class="software-wrapper">
-                <h1>Aternium Client</h1>
-                <p style="max-width: 45vw;">
-                    Aternium Client ist ein Minecraft Client inklusive Launcher mit cleanem Design, verbesserter Performance, QoL Features, integriertem Alt-Manager für das schnelle Wechseln verschiedener Accounts und ein integriertes VPN, damit Server deine IP nicht abgreifen.
-                </p>
-                <div class="button-wrapper">
-                    <button>Download Installer x64</button>
+                <div class="category">
+                    <h3>Products</h3>
+                    <a href="">Category link</a>
+                    <a href="">Category link</a>
+                    <a href="">Category link</a>
+                </div>
+                
+                <div class="category">
+                    <h3>Legal</h3>
+                    <a href="">Category link</a>
+                    <a href="">Category link</a>
+                    <a href="">Category link</a>
+                </div>
+                
+                <div class="category">
+                    <h3>External</h3>
+                    <a href="">Category link</a>
+                    <a href="">Category link</a>
+                    <a href="">Category link</a>
                 </div>
             </div>
-            
-            <img class="software-img" src="src/aternium_launcher.png" alt="Aternium Launcher">
-        </div>
-
-        <div class="software-container" id="fyutilsContainer">
-            <div class="software-wrapper">
-                <h1>FyUTILS CLI</h1>
-                <p style="max-width: 45vw;">
-                    OnFyre Utilitys (aka. FyUTILS) ist ein Command Line Interface (CLI) bestimmt für Hacking. FyUTILS erhält ständig neue Updates mit vielen neuen Features. Die beliebtesten sind:
-                    Port Flooding, Port Scanning, USB Software Loader und viele mehr.
-                </p>
-                <div class="button-wrapper">
-                    <a href="https://github.com/NoahOnFyre/FyUTILS/releases/latest" target="_blank" rel="noopener noreferrer"><button>Download Standalone</button></a>
+            <div class="divider"></div>
+            <div class="subcontent">
+                <span id="copyright">© 2020-2023 OFN</span>
+                <div class="social-wrapper">
+                    <a class="icon-wrapper" href="https://discord.io/onfyre" target="_blank" rel="noopener noreferrer"><img class="icon" src="src/discord.svg"></a>
+                    <a class="icon-wrapper" href="https://github.com/onfyrenetwork" target="_blank" rel="noopener noreferrer"><img class="icon" src="src/github.svg"></a>
                 </div>
             </div>
-            
-            <img class="software-img" src="src/fyutils_cli.png" alt="FyUTILS CLI">
-        </div>
-
-        <div class="software-container" id="aventurinContainer">
-            <div class="software-wrapper">
-                <h1>Aventurin</h1>
-                <p style="max-width: 45vw;">
-                    Aventurin ist momentan noch in der Entwicklungszeit. Zur Open Beta kannst du dich gerne für das testen der Software bewerben!
-                </p>
-                <div class="button-wrapper">
-                    <a href="https://openbeta.onfyre.net/apply"><button>Open Beta Portal</button></a>
-                </div>
-            </div>
-            
-            <img class="software-img" src="src/icon.png" alt="Icon">
-        </div>
-
-        <div class="software-container" id="rhodionitContainer">
-            <div class="software-wrapper">
-                <h1>Rhodionit</h1>
-                <p style="max-width: 45vw;">
-                    Rhodionit ist momentan noch in der Entwicklungszeit. Zur Open Beta kannst du dich gerne für das testen der Software bewerben!
-                </p>
-                <div class="button-wrapper">
-                    <a href="https://openbeta.onfyre.net/apply"><button>Open Beta Portal</button></a>
-                </div>
-            </div>
-            
-            <img class="software-img" src="src/icon.png" alt="Icon">
-        </div>
-    </section>
-
-    <section class="news">
-        <div class="news-item">
-            <h2 class="news-title">UI Update</h2>
-            <p class="news-content">
-                Das neuste Update der Website beinhaltet einige Änderungen am User Interface, sowie mehr Funktionen, Inhalte, etc. Insbesondere das User Interface ist intuitiver und leichter zu bedienen. Die Software Sektion wurde ebenfalls überarbeitet.
-            </p>
-        </div>
-
-        <div class="news-item">
-            <h2 class="news-title">Hosting</h2>
-            <p class="news-content">
-                Wir nutzen ab jetzt GitHub Pages und garantieren somit eine 99.99999% Uptime der Website und vielen der WebServices wie bspw. die Meranith API und viele mehr. Welche WebServices davon betroffen sind erfährst du <a href="https://docs.onfyre.net/hosting" class="link">Hier</a>.
-            </p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-link-wrapper">
-            <div class="footer-link-category">
-                <h4 class="footer-heading">Rechtliches</h4>
-                <a class="footer-link" href="">Impressum</a>
-                <a class="footer-link" href="">Team</a>
-                <a class="footer-link" href="">Kontakt</a>
-            </div>
-            
-            <div class="footer-link-category">
-                <h4 class="footer-heading">Security</h4>
-                <a class="footer-link" href="">Client Side</a>
-                <a class="footer-link" href="">Server Side</a>
-                <a class="footer-link" href="">Proxies und Gateways</a>
-            </div>
-            
-            <div class="footer-link-category">
-                <h4 class="footer-heading">Administration</h4>
-                <a class="footer-link" href="">Serveradministration</a>
-                <a class="footer-link" href="">Private Benutzung</a>
-                <a class="footer-link" href="">Teamadministration</a>
-            </div>
-            
-            <div class="footer-link-category">
-                <h4 class="footer-heading">Social Media</h4>
-                <a class="footer-link" href="">Discord</a>
-                <a class="footer-link" href="">YouTube</a>
-                <a class="footer-link" href="">TikTok</a>
-            </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 85%;">
-            <span style="font-size: 18px; color: #aaaaaa;">© 2020-2023 OnFyre Network</span>
-            <span style="font-size: 18px; color: #aaaaaa;"><a href="https://docs.onfyre.net/material-core">Material Core</a> by <a href="https://onfyre.net">OnFyre</a></span>
-        </div>
-    </footer>
-
+        </footer>
+    </main>
 </body>
-
 </html>
