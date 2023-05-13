@@ -1,0 +1,90 @@
+:root {
+    --color: #006eff;
+    --lighten: #328bff;
+}
+
+h1 {
+    display: flex;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+span {
+    font-size: inherit;
+}
+
+a {
+    color: #e3f2ff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.icon-wrapper {
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    aspect-ratio: 1;
+    transition: 0.15s ease-in-out;
+}
+
+.icon-wrapper:hover {
+    background-color: #232425;
+    transition: 0.15s ease-in-out;
+}
+
+.icon {
+    width: 35px;
+    aspect-ratio: 1;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    background-color: var(--color);
+    transition: 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--lighten);
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.colored {
+    color: var(--color);
+}
+
+.divider {
+    margin: 50px 0px;
+    background-color: var(--color);
+    height: 8px;
+    border-radius: 12px;
+}
+
+img {
+    border-radius: 12px;
+}
