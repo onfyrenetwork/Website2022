@@ -120,25 +120,31 @@ nav > * {
 .card:hover {
     transition: 0.15s ease-in-out;
     cursor: pointer;
-    background-color: #192129;
+    background-color: var(--darken);
 }
 
-.gallery {
+#gallery {
     display: flex;
     flex-direction: column;
     gap: 5vw;
     padding: 8vw;
 }
 
-.gallery > * {
+#gallery > * {
     animation-name: fly;
     animation-duration: 1s;
 }
 
-.gallery .row .content {
+#gallery .row .content {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.heading-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -148,7 +154,7 @@ nav > * {
     gap: 5vw;
 }
 
-.gallery img {
+#gallery img {
     width: 35vw;
 }
 

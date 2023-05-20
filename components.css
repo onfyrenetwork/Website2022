@@ -1,12 +1,13 @@
 :root {
     --color: #006eff;
     --lighten: #328bff;
+    --darken: #192129;
 }
 
 h1 {
     display: flex;
     font-size: 48px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.5px;
 }
 
@@ -20,7 +21,7 @@ h2 {
 h3 {
     display: flex;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.5px;
 }
 
