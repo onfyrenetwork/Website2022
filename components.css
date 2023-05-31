@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color: #006eff;
+    --lighten: #328bff;
+    --darken: #192129;
+    --main: #18191a;
+    --sec: #1d1f21;
+}
+
+::selection {
+    background: var(--color);
+}
+
+h1 {
+    display: flex;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+span {
+    font-size: inherit;
+}
+
+a {
+    color: #e3f2ff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.icon-wrapper {
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    aspect-ratio: 1;
+    transition: 0.15s ease-in-out;
+}
+
+.icon-wrapper:hover {
+    background-color: #232425;
+    transition: 0.15s ease-in-out;
+}
+
+.icon {
+    width: 35px;
+    aspect-ratio: 1;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    background-color: var(--color);
+    transition: 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--lighten);
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.colored {
+    color: var(--color);
+}
+
+.divider {
+    margin: 50px 0px;
+    background-color: var(--color);
+    height: 8px;
+    border-radius: 12px;
+}
+
+img {
+    border-radius: 12px;
+}

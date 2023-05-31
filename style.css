@@ -1,0 +1,225 @@
+* {
+    color: #e3f2ff;
+    font-size: 18px;
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--main);
+    display: flex;
+    padding: 15px 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > * {
+    animation-name: fly;
+    animation-duration: 1s;
+}
+
+.nav-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+#overview .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+}
+
+.hero-heading {
+    font-size: 48px;
+}
+
+.hero-paragraph {
+    font-size: 20px;
+    max-width: 35vw;
+}
+
+.social-wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+#overview {
+    background-color: var(--main);
+    padding: 12vw;
+}
+
+#overview > * {
+    animation-name: fly;
+    animation-duration: 1s;
+}
+
+#software {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--sec);
+    gap: 15px;
+    padding: 2vw;
+}
+
+#software > * {
+    animation-name: fly;
+    animation-duration: 1s;
+}
+
+.heading-wrapper {
+    display: flex;
+    gap: 14px;
+}
+
+.software-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.headline {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+.card {
+    padding: 35px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 25px;
+    transition: 0.15s ease-in-out;
+}
+
+.card:hover {
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+    background-color: var(--darken);
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 8vw;
+}
+
+#gallery > * {
+    animation-name: fly;
+    animation-duration: 1s;
+}
+
+#gallery .row .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.heading-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+#gallery img {
+    width: 35vw;
+}
+
+footer {
+    padding: 4vw 12vw;
+    background-color: var(--sec);
+}
+
+footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > * {
+    animation-name: fly;
+    animation-duration: 1s;
+}
+
+.category {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+}
+
+.category a {
+    color: #78828c;
+    transition: 0.15s ease-in-out;
+}
+
+.category a:hover {
+    color: #d7e9fa;
+    transition: 0.15s ease-in-out;
+}
+
+.subcontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    #software {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .hero-paragraph {
+        max-width: max-content;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        padding: 8vw 12vw;
+    }
+
+    footer .wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-item {
+        display: none;
+    }
+}
